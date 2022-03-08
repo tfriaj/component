@@ -1,0 +1,99 @@
+.navigation-2 {
+  .nav-item {
+    .nav-link {
+      padding: 1.68rem .75rem;
+      margin: 0 .5rem;
+      @include desktop-lg {
+        padding: 1.68rem .65rem;
+        margin: 0 .25rem;
+      }
+      @include desktop {
+        padding: .4rem .75rem;
+      }
+      color: $text-dark;
+      &::before {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $color-highlited;
+        transform: scaleX(0);
+        transform-origin: left;
+        @include desktop {
+          display: none;
+        }
+      }
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      background-color: #FBFBFB;
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      &:active, &.active, &:focus {
+        background-color: $color-highlited;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      box-shadow: 0px 14px 21px #E4EFF9;
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+    @media (min-width:991px) {
+      &:hover .dropdown-menu {
+        margin-top: 0px;
+      }
+    }
+  }
+  @include desktop {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 60px);
+      width: 1920px;
+      background-color: $color-highlited;
+      bottom: 0;
+      left: -50%;
+      z-index: 1;
+    }
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: transparent;
+          opacity: .8;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  // search-warpper
+  @media (min-width:991px) {
+    .search-warpper {
+      background: $color-highlited;
+    }
+  }
+}

@@ -1,0 +1,547 @@
+body {
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba($black ,.5);
+  color: $white;
+}
+
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $body-color;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-primary;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  &-sm {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+  }
+}
+
+.line-title {
+  position: relative;
+  padding-bottom: 10px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: $color-primary;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-default {
+  border-color: $border-color !important;
+}
+
+// ======================== color helper classes ========================
+.text-default {
+  color: $text-color !important;
+}
+.text-light {
+  color: $light !important;
+}
+.text-light strong {
+  color: $white !important;
+}
+.text-muted {
+  color: $text-muted !important;
+}
+.text-dark {
+  color: $text-dark !important;
+}
+.bg-dark {
+  background: $dark !important;
+}
+.bg-dark-overlay {
+  background: rgba($dark, .6) !important;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+.bg-primary {
+  background: $color-primary !important;
+}
+.bg-primary-soft {
+  background: rgba($color-primary, .3) !important;
+}
+
+.text-secondary {
+  color: $color-secondary !important;
+}
+.bg-secondary {
+  background: $color-secondary !important;
+}
+.bg-secondary-soft {
+  background: rgba($color-secondary, .3) !important;
+}
+.text-tertiary {
+  color: $color-tertiary !important;
+}
+.bg-tertiary {
+  background: $color-tertiary !important;
+}
+.bg-tertiary-soft {
+  background: rgba($color-tertiary, .3) !important;
+}
+
+.text-quatemary {
+  color: $color-quatemary !important;
+}
+.bg-quatemary {
+  background: $color-quatemary !important;
+}
+.bg-quatemary-soft {
+  background: rgba($color-quatemary, .3) !important;
+}
+
+// ======================== shadow ========================
+.shadow {
+  box-shadow: 0px 6px 20px rgba(214, 230, 244, 0.85) !important;
+}
+.shadow-lg {
+  box-shadow: -20px -20px 50px #fdfdfd, 20px 20px 50px darken($body-color, 7) !important;
+}
+
+// ======================== font weight ========================
+.fw-bold {
+  font-family: 'Proxima Nova Bold';
+}
+.fw-normal {
+  font-family: 'Proxima Nova Rg';
+}
+
+// ======================== badge helper classes ========================
+a.badge {
+  transition: 0.3s;
+}
+.badge {
+  padding-bottom: 0.25em;
+  font-size: $font-size;
+  &.small {
+    font-size: 0.875rem;
+  }
+}
+.badge-primary,
+a.badge-primary:hover {
+  color: $color-primary;
+  background: lighten(desaturate($color-primary, 35.48), 48.24);
+}
+.badge-secondary,
+a.badge-secondary:hover {
+  color: $color-secondary;
+  background: lighten(
+    desaturate(adjust-hue($color-secondary, 1), 2.04),
+    30.39
+  );
+}
+.badge-tertiary,
+a.badge-tertiary:hover {
+  color: $color-tertiary;
+  background: lighten(desaturate($color-tertiary, 1.64), 37.45);
+}
+.badge-quatemary,
+a.badge-quatemary:hover {
+  color: $color-quatemary;
+  background: lighten($color-quatemary, 35.29);
+}
+
+// gradient helper classes
+.bg-gradient-dark {
+  background: linear-gradient(90deg, #124477 0%, rgba(#124477, 0.4) 100%);
+}
+.bg-gradient-primary {
+  background: linear-gradient(358.53deg, darken(desaturate(rgba($color-primary, .80), 2.90), 12.55) 1.16%, rgba($color-primary, 0.4) 98.69%);
+}
+.bg-gradient-secondary {
+  background: linear-gradient(358.53deg, darken(desaturate($color-secondary, 28.79), 21.37) 1.16%, darken(desaturate(rgba($color-secondary, .4), 28.79), 21.37) 98.69%);
+}
+.bg-gradient-tertiary {
+  background: linear-gradient(358.53deg, darken(saturate(adjust-hue(rgba($color-tertiary, .85), -1), 5.28), 25.49) 1.16%, rgba($color-tertiary, 0.4) 98.69%);
+}
+.bg-gradient-quatemary {
+  background: linear-gradient(358.53deg, darken(saturate(rgba($color-quatemary, .85), 46.15), 27.25) 1.16%, rgba($color-quatemary, 0.4) 98.69%);
+}
+
+// ======================== nav-pills-custom ========================
+.nav-pills-custom {
+  .nav-item {
+    margin-right: 15px;
+  }
+  .nav-link {
+    color: $dark;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-bottom: 7px !important;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 100%;
+      background-color: $color-primary;
+      left: 0;
+      bottom: -2px;
+      border-radius: 5px 5px 0px 0px;
+      transition: .3s ease-out;
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+    &.active::after {
+      transform: scaleX(1);
+    }
+  }
+  .active {
+    background-color: transparent !important;
+    color: $dark !important;
+    border-bottom-color: $color-primary;
+  }
+}
+
+// ======================== content style ========================
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-primary;
+    font-weight: 500;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    &.img-center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &.img-left{
+      display: block;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    &.img-right{
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+    &.img-float-left{
+      float: left;
+      margin-right: 1.5rem;
+    }
+    &.img-float-right{
+      float: right;
+      margin-left: 1.5rem;
+    }
+  }
+  figure{
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    img{
+      margin-bottom: .7rem;
+    }
+    &.img-center{
+      display: block;
+      text-align: center;
+    }
+    &.img-left{
+      display: block;
+      text-align: left;
+    }
+    &.img-right{
+      display: block;
+      text-align: right;
+    }
+    &.img-float-left{
+      float: left;
+      margin-right: 1.5rem;
+    }
+    &.img-float-right{
+      float: right;
+      margin-left: 1.5rem;
+    }
+  }
+
+  a {
+    color: $text-dark;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: .7rem;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+
+    li {
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: .5rem;
+        width: .5rem;
+        border-radius: 50%;
+        background: $color-primary;
+        left: 3px;
+        top: .5rem;
+      }
+    }
+  }
+
+  .tab {
+    &-panel {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  
+      pre {
+        margin: 0;
+      }
+    }
+  
+    &-content {
+      display: block;
+      clear: both;
+      padding: .5rem;
+      border: 1px solid $border-color;
+  
+      .tab-item {
+        display: none;
+      }
+  
+      .tab-item.active {
+        display: block;
+      }
+    }
+  
+    &-nav-button {
+      border: 1px solid $border-color;
+      border-radius: .4rem .4rem 0 0;
+      background-color: $light;
+      float: left;
+      display: block;
+      position: relative;
+      margin-left: .4rem;
+      bottom: -1px;
+  
+      &.active {
+        background-color: $white;
+        border-bottom-color: $white;
+      }
+  
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid $border-color;
+  }
+
+  table td,
+  table th {
+    padding: .75rem;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  thead {
+    background: $light;
+    margin-bottom: 0;
+
+    tr {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  tbody {
+    background: lighten($color: $light, $amount: 5);
+    margin-bottom: 0;
+  }
+
+  .notices {
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .notices p {
+    padding: .7rem;
+    margin-bottom: 0;
+  }
+
+  .notices p::before {
+    position: absolute;
+    top: 2px;
+    color: $white;
+    // font-family: $font-icon;
+    font-weight: 900;
+    content: "\f05a";
+    left: .7rem;
+  }
+
+  .notices.note p {
+    border-top: 1.9rem solid #6ab0de;
+    background: #e3f4ff;
+  }
+
+  .notices.note p::after {
+    content: 'Note';
+    position: absolute;
+    top: 2px;
+    color: $white;
+    left: 2rem;
+  }
+
+
+  .notices.tip p {
+    border-top: 1.9rem solid #78C578;
+    background: #e2ffe2;
+  }
+
+  .notices.tip p::after {
+    content: 'Tip';
+    position: absolute;
+    top: 2px;
+    color: $white;
+    left: 2rem;
+  }
+
+  .notices.info p {
+    border-top: 1.9rem solid #F0B37E;
+    background: #ffedde;
+  }
+
+  .notices.info p::after {
+    content: 'Info';
+    position: absolute;
+    top: 2px;
+    color: $white;
+    left: 2rem;
+  }
+
+
+  .notices.warning p {
+    border-top: 1.9rem solid #E06F6C;
+    background: #ffdad8;
+  }
+
+  .notices.warning p::after {
+    content: 'Warning';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 2rem;
+  }
+
+
+  blockquote {
+    font-size: 1.5rem !important;
+    color: $text-color;
+    padding: 1.5rem 3.5rem;
+    border-left: 2px solid $color-primary;
+    margin: 3.5rem 0;
+    font-weight: bold;
+    background: $light;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: .7rem 0;
+    white-space: pre-wrap;
+  }
+
+  code {
+    margin-bottom: 0 !important;
+    font-size: 100%;
+  }
+}

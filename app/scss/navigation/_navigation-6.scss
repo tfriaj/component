@@ -1,0 +1,110 @@
+.navigation-6 {
+  .bg-black {
+    background-color: #444 !important;
+  }
+  .nav-item {
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      @include desktop-xl {
+        padding: 0.75rem 1rem;
+      }
+      color: $white;
+      opacity: .8;
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      color: $white;
+      padding: .5rem 1.25rem;
+      &:hover {
+        background-color: #555 !important;
+      }
+      &:active, &.active, &:focus {
+        background-color: $color-tertiary;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      background-color: #444 !important;
+      box-shadow: 0px 14px 21px #444;
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+    @media (min-width:991px) {
+      &:hover .dropdown-menu {
+        margin-top: 0px;
+      }
+    }
+  }
+  @include desktop {
+    position: relative;
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: transparent;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  // btn style
+  .btn-variable {
+    border: 0;
+    padding: 0.4rem .8rem;
+    color: $color-tertiary;
+    font-weight: bold;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      color: $color-tertiary;
+      opacity: .5;
+    }
+    @include mobile {
+      padding: 0.4rem .5rem;
+    }
+  }
+
+  // search-warpper
+  .search-warpper {
+    border-radius: 5px;
+    .input-group-text, .form-control {
+      background-color: transparent !important;
+      color: $dark;
+    }
+    .input-group-text {
+      border-right: 0;
+    }
+    .form-control {
+      border-left: 0;
+      width: 260px;
+      @include desktop {
+        width: 200px;
+      }
+    }
+  }
+}

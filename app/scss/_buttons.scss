@@ -1,0 +1,182 @@
+/* Button style */
+.btn {
+  font-size: 1rem;
+  font-family: $font-primary;
+  text-transform: capitalize;
+  padding: 0.62rem 1.875rem;
+  border-radius: 5px;
+  border: 1px solid ;
+  position: relative;
+  z-index: 1;
+  transition: .25s ease;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    color: $white;
+    outline: 0;
+    box-shadow: none !important;
+  }
+}
+
+// button primary
+.btn-primary {
+  background: $color-primary;
+  color: $white;
+  border-color: $color-primary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-primary, 5) !important;
+    border-color: darken($color-primary, 5) !important;
+  }
+}
+
+// button outline primary
+.btn-outline-primary {
+  background: transparent;
+  color: $text-color;
+  border-color: $color-primary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-primary !important;
+    border-color: $color-primary !important;
+  }
+}
+
+// button secondary
+.btn-secondary {
+  background: $color-secondary;
+  color: $white;
+  border-color: $color-secondary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-secondary, 5) !important;
+    border-color: darken($color-secondary, 5) !important;
+  }
+}
+
+// button outline secondary
+.btn-outline-secondary {
+  background: transparent;
+  color: $text-color;
+  border-color: $color-secondary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-secondary !important;
+    border-color: $color-secondary !important;
+  }
+}
+
+// button tertiary
+.btn-tertiary {
+  background: $color-tertiary;
+  color: $white;
+  border-color: $color-tertiary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-tertiary, 5) !important;
+    border-color: darken($color-tertiary, 5) !important;
+  }
+}
+
+// button outline tertiary
+.btn-outline-tertiary {
+  background: transparent;
+  color: $text-color;
+  border-color: $color-tertiary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-tertiary !important;
+    border-color: $color-tertiary !important;
+  }
+}
+
+// button quatemary
+.btn-quatemary {
+  background: $color-quatemary;
+  color: $white;
+  border-color: $color-quatemary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-quatemary, 5) !important;
+    border-color: darken($color-quatemary, 5) !important;
+  }
+}
+
+// button outline quatemary
+.btn-outline-quatemary {
+  background: transparent;
+  color: $text-color;
+  border-color: $color-quatemary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-quatemary !important;
+    border-color: $color-quatemary !important;
+  }
+}
+
+// button highlited
+.btn-highlited {
+  background: $color-highlited;
+  color: $white;
+  border-color: $color-highlited;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-highlited, 5) !important;
+    border-color: darken($color-highlited, 5) !important;
+  }
+}
+
+// button outline highlited
+.btn-outline-highlited {
+  background: transparent;
+  color: $text-color;
+  border-color: $color-highlited;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-highlited !important;
+    border-color: $color-highlited !important;
+  }
+}

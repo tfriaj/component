@@ -1,0 +1,230 @@
+// nav toggler style
+.nav-toggler-icon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  user-select: none;
+  width: 60px;
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .top {
+    stroke-dasharray: 40 121;
+  }
+  .bottom {
+    stroke-dasharray: 40 121;
+  }
+}
+.navbar-toggler[aria-expanded="true"] {
+  .nav-toggler-icon {
+    transform: rotate(45deg);
+    .top {
+      stroke-dashoffset: -68px;
+    }
+    .bottom {
+      stroke-dashoffset: -68px;
+    }
+  }
+}
+
+// navigation style
+.navigation {
+  .navbar-brand img {
+    max-height: 21px;
+  }
+  .dropdown-item,
+  .nav-item {
+    font-size: 15px;
+  }
+  .nav-item {
+    .nav-link {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+  .dropdown {
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-item {
+      padding: .5rem 1.25rem;
+      &:hover {
+        background-color: #f5f5f5;
+      }
+      &:active, &.active, &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.navbar-expand-lg {
+  @media (min-width:991px) {
+    .navbar-nav {
+      align-items: center;
+      text-align: center;
+    }
+    .dropdown {
+      .dropdown-menu {
+        display: block;
+        margin-top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s ease;
+        min-width: 12rem;
+        &.dropdown-menu-end {
+          right: 0;
+          left: auto;
+        }
+        &.dropdown-menu-center {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:hover .dropdown-menu {
+        margin-top: -8px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.navbar-expand-xl {
+  @media (min-width:1200px) {
+    .dropdown {
+      .navbar-nav {
+        align-items: center;
+        text-align: center;
+      }
+      .dropdown-menu {
+        display: block;
+        margin-top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s ease;
+        min-width: 12rem;
+        &.dropdown-menu-end {
+          right: 0;
+          left: auto;
+        }
+        &.dropdown-menu-center {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:hover .dropdown-menu {
+        margin-top: -8px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+a.text-dark i.fab,
+a.text-white i.fab {
+  transition: .3s;
+  display: block;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+// navbar-links-group
+.navbar-links-group {
+  position: relative;
+  z-index: 87;
+  a {
+    color: $white;
+    position: relative;
+    &:not(:last-child) {
+      &::after {
+        content: '|';
+        color: $white;
+        margin: 0 15px;
+      }
+    }
+    &:hover {
+      color: rgba($white, .5) !important;
+    }
+  }
+}
+
+// search toggler style
+.search-toggler {
+  position: relative;
+  margin-left: 20px;
+  svg {
+    margin-left: 28px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 17px);
+    left: 0;
+    width: 1px;
+    height: 35px;
+    background-color: $border-color;
+  }
+  &.no-divider::before {
+    display: none;
+  }
+  @include desktop {
+    margin-left: 0;
+    svg {
+      margin-left: 0;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// search-warpper
+.search-warpper {
+  .input-group-text, .form-control {
+    border: 0;
+    background-color: rgba($white, .5);
+  }
+  .input-group-text {
+    border-right: 0;
+  }
+}
+
+// search-warpper
+.navigation-1, .navigation-2, .navigation-4, .navigation-5, .navigation-10 {
+  @media (min-width:991px) {
+    .search-warpper {
+      position: absolute;
+      display: block !important;
+      top: 61px;
+      left: 0;
+      z-index: 44;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: 0.3s;
+      &.show {
+        transform: scaleY(1);
+      }
+      .input-group-text, .form-control {
+        background-color: transparent !important;
+      }
+      .form-control {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+      }
+    }
+  }
+}

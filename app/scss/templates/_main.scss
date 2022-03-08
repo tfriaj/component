@@ -1,0 +1,82 @@
+.ad-banner {
+  .block {
+    border: 1px solid $black;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 100%;
+      background-color: $black;
+      z-index: -1;
+      border-radius: 0px 100px 0px 90px;
+      @include desktop-lg {
+        border-radius: 0px 100px 0px 60px;
+      }
+      @include tablet {
+        width: 100%;
+        border-radius: 0px 100px 0px 90px;
+      }
+    }
+    @include tablet {
+      padding: 0 2rem;
+      .mike {
+        max-width: 200px;
+        margin-top: -35px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  strong {
+    color: $color-primary;
+  }
+  color: $white;
+  h1,h2,h3,h4,h5,h6 {
+    color: $white;
+  }
+}
+
+.promotion {
+  background-color: #16336B;
+}
+
+.sidebar-promotion {
+  background-color: #01945F;
+  position: relative;
+  padding-top: 100px !important;
+  z-index: 1;
+  .illustration-1,
+  .illustration-2 {
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+  }
+  .illustration-1 {
+    left: 0;
+  }
+  .illustration-2 {
+    right: 0;
+  }
+  .promotion-title {
+    strong {
+      display: block;
+      font-size: 130%;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.subscription {
+  background-color: #D6E6F4;
+  @include mobile {
+    .input-group {
+      background-color: transparent !important;
+    }
+    .form-control, .input-group-text {width: 100%;}
+  }
+}

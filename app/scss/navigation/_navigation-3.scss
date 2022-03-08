@@ -1,0 +1,131 @@
+.navigation-3 {
+  .nav-item {
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      margin: 0 5px;
+      @include desktop-xl {
+        padding: 0.75rem 1rem;
+        margin: 0 2px;
+      }
+      @include desktop-lg {
+        padding: 0.75rem .75rem;
+      }
+      color: $white;
+      &::before {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $color-serenity;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        border-radius: 10px 10px 0px 0px;
+        @include desktop {
+          display: none;
+        }
+      }
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      &::before {
+        transform: scaleY(1);
+      }
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      padding: .5rem 1.25rem;
+      &:active, &.active, &:focus {
+        background-color: $color-serenity;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      box-shadow: 0px 14px 21px #E4EFF9;
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+    @media (min-width:991px) {
+      &:hover .dropdown-menu {
+        margin-top: 0px;
+      }
+    }
+  }
+  @include desktop {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 80px);
+      width: 1920px;
+      background-color: $color-serenity;
+      bottom: 0;
+      left: -50%;
+      z-index: 1;
+    }
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: transparent;
+          opacity: .8;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  // btn style
+  .btn-variable {
+    background-color: $color-serenity;
+    border-color: $color-serenity;
+    color: $white;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      background: darken($color-serenity, 5) !important;
+      border-color: darken($color-serenity, 5) !important;
+    }
+    @include mobile {
+      padding: 0.6rem 1rem;
+    }
+  }
+
+  // search-warpper
+  .search-warpper {
+    border-radius: 5px;
+    .input-group-text, .form-control {
+      background-color: transparent !important;
+      border: 1px solid $border-color;
+      color: $dark;
+    }
+    .input-group-text {
+      border-right: 0;
+    }
+    .form-control {
+      border-left: 0;
+      width: 240px;
+      @include desktop {
+        width: 200px;
+      }
+    }
+  }
+}

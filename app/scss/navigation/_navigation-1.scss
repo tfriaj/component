@@ -1,0 +1,90 @@
+.navigation-1 {
+  box-shadow: 0px 14px 21px #E4EFF9;
+  .nav-item {
+    .nav-link {
+      padding: 1.68rem 1.25rem;
+      @include desktop-lg {
+        padding: 1.68rem .75rem;
+      }
+      @include desktop {
+        padding: .4rem .75rem;
+      }
+      color: $text-dark;
+      &::before {
+        bottom: 20px;
+        left: 1.25rem;
+        width: calc(100% - (1.25rem * 2));
+        height: 2px;
+        background-color: $color-primary;
+        transform: scaleX(0);
+        @include desktop {
+          display: none;
+        }
+      }
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      &:active, &.active, &:focus {
+        background-color: $color-primary;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      box-shadow: 0px 14px 21px #E4EFF9;
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+  }
+  @include desktop {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 60px);
+      width: 1920px;
+      background-color: $color-primary;
+      bottom: 0;
+      left: -50%;
+      z-index: 1;
+    }
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          opacity: .8;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  // search-warpper
+  @media (min-width:991px) {
+    .search-warpper {
+      background: $color-primary;
+    }
+  }
+}

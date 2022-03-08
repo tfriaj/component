@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Finance Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <link href="plugins/font-awesome/v6/icons.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/brands.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/regular.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/solid.css" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+<section class="py-7 d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-capitalize">
+        <a class="btn btn-primary py-1 px-3 m-1" href="navigation.html">Navigation</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="blog.html">Blog</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="icon-set.html">Icon Set</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="category.html">category</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="single.html">single</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="about.html">about</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="404.html">404</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="navigation navigation-1 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light py-0">
+          <!-- brand logo -->
+          <a class="navbar-brand order-2 order-lg-1" href="/">
+            <img src="images/navigation/logo-1.png" alt="Logo">
+          </a>
+
+          <!-- navbar toggler -->
+          <button class="navbar-toggler p-0 border-0 shadow-none order-0 order-lg-2 ms-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+          </button>
+            
+          <!-- search-toggler mobile -->
+          <button class="search-toggler bg-transparent border-0 px-0 d-block d-lg-none order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#000"/>
+              </svg>
+          </button>
+
+          <!-- navigation menu -->
+          <div class="collapse navbar-collapse order-4 order-lg-3" id="navigation-1">
+
+            <div class="search-warpper search-warpper-toggleble mt-4 d-block d-lg-none">
+              <div class="input-group">
+                <span class="input-group-text ps-4">
+                  <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                    </svg>
+                </span>
+                <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="navigation.html">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icon-set.html">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- search-toggler desktop -->
+            <button class="search-toggler bg-transparent border-0 px-0 d-none d-lg-block" data-toggle="search">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+                </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-4">This is the Full Width Page</h2>
+
+        <img class="rounded-1" src="images/about.jpeg" alt="about image">
+
+        <div class="content mt-7">
+          <h5>Who We Are</h5>
+          <p>The Balance makes personal finance easy to understand. It is home to experts who provide clear, practical advice on managing your money. Whether you’re looking to invest, buy a home, save for retirement, or achieve another financial goal, The Balance’s 20-year-strong library of more than 9,000 pieces of content will answer your questions with straightforward personal financial advice.</p>
+          <p>The Balance is part of The Balance family of sites, including The Balance Careers and The Balance Small Business, covering personal finance, career, and small business topics. With more than 24 million monthly visitors, The Balance is among the top-10 largest finance properties as measured by comScore, a leading Internet measurement company. Our more than 50 expert writers have extensive qualifications and expertise in their topics, including MBAs, PhDs, CFPs, other advanced degrees and professional certifications.</p>
+
+          <h5>Editorial Guidelines</h5>
+          <p>At The Balance, we take great pride in the quality of our content. Our writers create original, accurate, engaging content that is free of ethical concerns or conflicts. If you ever come across an article that you think needs to be improved, please reach out by emailing contact@thebalance.com.</p>
+
+          <h5>No Individual Investment Advice</h5>
+          <p>The Balance is committed to answering your money questions. But we know many of our answers do not include solutions for readers underserved by the financial industry and financial publishing community. There are more complex challenges facing our Black, Indigenous, and other Readers of Color, and we must address these challenges in our content or we fail our core mission.</p>
+        </div>
+
+        <div class="my-7 text-center text-lg-start">
+          <div class="row gy-5">
+            <div class="col-12">
+              <h3 class="mb-4 text-center">NameCom Helps You</h3>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="text-primary bg-primary-soft rounded d-flex align-items-center justify-content-center lh-1 mb-4 mx-auto ms-lg-0" style="height:48px;width:48px">
+                <i class="fas fa-check"></i>
+              </div>
+              <h4>Ethics Policy</h4>
+              <p>Contributors to The Balance are independent contractors who create and publish content on TheBalance.com and affiliated sites (the "Site"). Contributors are compensated in part </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="text-secondary bg-secondary-soft rounded d-flex align-items-center justify-content-center lh-1 mb-4 mx-auto ms-lg-0" style="height:48px;width:48px">
+                <i class="fas fa-check"></i>
+              </div>
+              <h4>Editorial Guidelines</h4>
+              <p>Contributors to The Balance are independent contractors who create and publish content on TheBalance.com and affiliated sites (the "Site"). Contributors are compensated in part </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="text-tertiary bg-tertiary-soft rounded d-flex align-items-center justify-content-center lh-1 mb-4 mx-auto ms-lg-0" style="height:48px;width:48px">
+                <i class="fas fa-check"></i>
+              </div>
+              <h4>Product Recommendations</h4>
+              <p>Contributors to The Balance are independent contractors who create and publish content on TheBalance.com and affiliated sites (the "Site"). Contributors are compensated in part </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <img class="img-float-left" src="images/about-2.jpeg" alt="about-2">
+          <h4>Christine DiGangi has dedicated the majority of her career to financial education</h4>
+          <p>Writing extensively about the consumer credit system. In early 2019, she joined The Balance as Editorial Director, where she oversees content strategy and operations. Previously, DiGangi served as the managing editor of mortgage content at LendingTree, an editor and writer for Credit.com, communications coordinator for the Society of Professional Journalists, and a copy editor for The New York Times</p>
+          <p>Yasmin Ghahremani is an Associate Editorial Director at The Balance, where she oversees educational content about consumer financial products, ranging from credit cards to life insurance. She joined the team in April 2019, bringing seven years. </p>
+
+          <br>
+          <br>
+          <br>
+
+          
+          <img class="img-float-right" src="images/about-3.jpeg" alt="about-2">
+          <h4>Helen joined The Balance in June 2019 and became senior news editor in May 2020 to lead the expansion of the website's news coverage.</h4>
+          <p>She has more than 17 years of journalism experience, mostly in business and finance news. She has worked at American Banker and Bloomberg News, covering banking and insurance and taking on reporting and editing roles with ever increasing responsibility. She is passionate about making complicated topics easy for the layperson to understand and compulsive about accuracy and transparency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="border-top"></div>
+      </div>
+    </div>
+    <div class="row gy-6 mt-5 justify-content-between">
+      <div class="col-xl-4 col-lg-5">
+        <a href="#" class="d-inline-block mb-4">
+          <img src="images/navigation/logo-1.png" alt="logo">
+        </a>
+        <p class="mb-0 mb-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+        <div class="d-none d-lg-block">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-telegram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+          </ul>
+
+          <p>© 2021 Namecom. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7">
+        <div class="row gy-6">
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">About</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Company</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Leadership</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Press</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">Help</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Help center</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Support team</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Community</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Security FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">Legal</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Terms of use</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Privacy policy</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">California privacy policy</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Updated</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-block d-lg-none mt-5 mt-lg-0">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-telegram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+          </ul>
+
+          <p>© 2021 Namecom. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<!-- <script src="plugins/jquery/jquery.slim.min.js"></script> -->
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

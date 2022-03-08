@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Finance Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <link href="plugins/font-awesome/v6/icons.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/brands.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/regular.css" rel="stylesheet">
+  <link href="plugins/font-awesome/v6/solid.css" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+<section class="py-7 d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-capitalize">
+        <a class="btn btn-primary py-1 px-3 m-1" href="navigation.html">Navigation</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="blog.html">Blog</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="icon-set.html">Icon Set</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="category.html">category</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="single.html">single</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="about.html">about</a>
+        <a class="btn btn-primary py-1 px-3 m-1" href="404.html">404</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="navigation navigation-1 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light py-0">
+          <!-- brand logo -->
+          <a class="navbar-brand order-2 order-lg-1" href="/">
+            <img src="images/navigation/logo-1.png" alt="Logo">
+          </a>
+
+          <!-- navbar toggler -->
+          <button class="navbar-toggler p-0 border-0 shadow-none order-0 order-lg-2 ms-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+          </button>
+            
+          <!-- search-toggler mobile -->
+          <button class="search-toggler bg-transparent border-0 px-0 d-block d-lg-none order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#000"/>
+              </svg>
+          </button>
+
+          <!-- navigation menu -->
+          <div class="collapse navbar-collapse order-4 order-lg-3" id="navigation-1">
+
+            <div class="search-warpper search-warpper-toggleble mt-4 d-block d-lg-none">
+              <div class="input-group">
+                <span class="input-group-text ps-4">
+                  <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                    </svg>
+                </span>
+                <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="navigation.html">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icon-set.html">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- search-toggler desktop -->
+            <button class="search-toggler bg-transparent border-0 px-0 d-none d-lg-block" data-toggle="search">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+                </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-2 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light py-0">
+          <!-- brand logo -->
+          <a class="navbar-brand order-2 order-lg-1" href="/">
+            <img src="images/navigation/logo-2.png" alt="Logo">
+          </a>
+
+          <!-- navbar toggler -->
+          <button class="navbar-toggler p-0 border-0 shadow-none order-0 order-lg-2 ms-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+          </button>
+            
+          <!-- search-toggler mobile -->
+          <button class="search-toggler bg-transparent border-0 px-0 d-block d-lg-none order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#000"/>
+              </svg>
+          </button>
+
+          <!-- navigation menu -->
+          <div class="collapse navbar-collapse order-4 order-lg-3" id="navigation-2">
+
+            <div class="search-warpper search-warpper-toggleble mt-4 d-block d-lg-none">
+              <div class="input-group">
+                <span class="input-group-text ps-4">
+                  <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                    </svg>
+                </span>
+                <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- search-toggler desktop -->
+            <button class="search-toggler bg-transparent border-0 px-0 d-none d-lg-block" data-toggle="search">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+                </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-3 bg-white">
+
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 py-lg-4 g-0">
+      <!-- brand logo -->
+      <a class="navbar-brand me-0" href="/">
+        <img src="images/navigation/logo-1.png" alt="Logo">
+      </a>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <!-- search wrapper desktop -->
+        <div class="search-warpper d-none d-md-block">
+          <div class="input-group">
+            <span class="input-group-text px-3">
+              <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#6D7073"/>
+                </svg>
+            </span>
+            <input type="search" class="form-control shadow-none p-2 ps-0" placeholder="Search">
+          </div>
+        </div>
+
+        <!-- navbar action button -->
+        <div class="ms-2">
+          <a href="#" class="btn btn-variable">Button</a>
+        </div>
+          
+        <!-- search-toggler mobile -->
+        <button class="search-toggler bg-transparent border-0 px-0 ms-4 d-block d-md-none"  type="button" data-bs-toggle="collapse" data-bs-target="#navigation-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+            </svg>
+        </button>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler p-0 border-0 shadow-none ms-1 me-n3 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 d-block">
+    <div class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="collapse navbar-collapse" id="navigation-3">
+              <!-- search mobile -->
+              <div class="search-warpper search-warpper-toggleble mt-4 d-block d-md-none">
+                <div class="input-group">
+                  <span class="input-group-text ps-4">
+                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                      </svg>
+                  </span>
+                  <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+                </div>
+              </div>
+              <!-- navigation menu -->
+              <ul class="navbar-nav mx-auto my-3 my-lg-0 text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Investing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                    <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                    <li><a class="dropdown-item" href="#">Banking</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Credit Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-4 bg-white">
+
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 py-lg-4 g-0">
+      <!-- social links -->
+      <ul class="list-unstyled mb-0 d-none d-sm-block">
+        <li class="list-inline-item"><a href="#" class="text-dark d-block p-2"><i class="fab fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark d-block p-2"><i class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark d-block p-2"><i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark d-block p-2"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+
+      <!-- brand logo -->
+      <a class="navbar-brand me-0" href="/">
+        <img src="images/navigation/logo-1.png" alt="Logo">
+      </a>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <!-- search-toggler mobile -->
+        <button class="search-toggler search-toggler-mobile bg-transparent border-0 no-divider px-0 ms-4 d-block d-lg-none"  type="button" data-bs-toggle="collapse" data-bs-target="#navigation-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+            </svg>
+        </button>
+            
+        <!-- search-toggler desktop -->
+        <button class="search-toggler bg-transparent border-0 no-divider px-0 d-none d-lg-block" data-toggle="search">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+            </svg>
+        </button>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler p-0 border-0 shadow-none ms-1 me-n3 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark py-0 d-block">
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="collapse navbar-collapse" id="navigation-4">
+              <!-- search mobile -->
+              <div class="search-warpper search-warpper-toggleble mt-4 mt-lg-0 d-block d-lg-none">
+                <div class="input-group">
+                  <span class="input-group-text ps-4">
+                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                      </svg>
+                  </span>
+                  <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+                </div>
+              </div>
+              <!-- navigation menu -->
+              <ul class="navbar-nav mx-auto my-3 my-lg-0 text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Investing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                    <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                    <li><a class="dropdown-item" href="#">Banking</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Credit Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-5 bg-white">
+
+  <div class="container">
+    <!-- advertisement banner mobile -->
+    <div class="navigation-banner d-block d-lg-none pt-3">
+      <img class="img-fluid w-100" src="images/navigation/navigation-ad-banner.jpg" alt="navigation-banner">
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between py-2 py-lg-4 g-0">
+      <!-- brand logo -->
+      <a class="navbar-brand me-0" href="/">
+        <img src="images/navigation/logo-5.png" alt="Logo">
+      </a>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <!-- advertisement banner desktop -->
+        <div class="navigation-banner d-none d-lg-block">
+          <img class="img-fluid" src="images/navigation/navigation-ad-banner.jpg" alt="navigation-banner">
+        </div>
+          
+        <!-- search-toggler mobile -->
+        <button class="search-toggler bg-transparent border-0 px-0 ms-4 d-block d-lg-none"  type="button" data-bs-toggle="collapse" data-bs-target="#navigation-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+            </svg>
+        </button>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler p-0 border-0 shadow-none ms-1 me-n3 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 d-block">
+    <div class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="collapse navbar-collapse" id="navigation-3">
+              <!-- search mobile -->
+              <div class="search-warpper search-warpper-toggleble mt-4 mt-lg-0 d-block d-lg-none">
+                <div class="input-group">
+                  <span class="input-group-text ps-4">
+                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                      </svg>
+                  </span>
+                  <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+                </div>
+              </div>
+              <!-- navigation menu -->
+              <ul class="navbar-nav ms-n0 ms-lg-n2 ms-xl-n3 me-auto my-3 my-lg-0 text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Investing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                    <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                    <li><a class="dropdown-item" href="#">Banking</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Credit Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+              </ul>
+            
+              <!-- search-toggler desktop -->
+              <button class="search-toggler no-divider bg-transparent border-0 px-0 d-none d-lg-block" data-toggle="search">
+                <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                  </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-6 bg-white">
+
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 py-lg-4 g-0">
+      <!-- brand logo -->
+      <a class="navbar-brand me-0" href="/">
+        <img src="images/navigation/logo-6.png" alt="Logo">
+      </a>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <!-- navbar links -->
+        <div class="me-0 me-md-2">
+          <a href="#" class="btn btn-variable">Login</a>
+        </div>
+        <div class="me-0 me-md-2">
+          <a href="#" class="btn btn-variable">Register</a>
+        </div>
+
+        <!-- search wrapper desktop -->
+        <div class="search-warpper d-none d-lg-block border rounded ms-3">
+          <div class="input-group">
+            <input type="search" class="form-control shadow-none p-2 ps-3" placeholder="Search">
+            <span class="input-group-text px-3">
+              <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#6D7073"/>
+                </svg>
+            </span>
+          </div>
+        </div>
+          
+        <!-- search-toggler mobile -->
+        <button class="search-toggler bg-transparent border-0 px-0 ms-2 ms-lg-4 d-block d-lg-none"  type="button" data-bs-toggle="collapse" data-bs-target="#navigation-6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+            </svg>
+        </button>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler p-0 border-0 shadow-none ms-1 me-n3 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 d-block">
+    <div class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="collapse navbar-collapse" id="navigation-6">
+              <!-- search mobile -->
+              <div class="search-warpper search-warpper-toggleble mt-4 mt-lg-0 d-block d-lg-none border">
+                <div class="input-group">
+                  <span class="input-group-text ps-4">
+                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                      </svg>
+                  </span>
+                  <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+                </div>
+              </div>
+              <!-- navigation menu -->
+              <ul class="navbar-nav ms-n0 ms-lg-n2 ms-xl-n3 me-auto my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Investing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                    <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                    <li><a class="dropdown-item" href="#">Banking</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Credit Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-7 bg-dark">
+
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 py-lg-4 g-0">
+      <!-- brand logo -->
+      <a class="navbar-brand me-0" href="/">
+        <img src="images/navigation/logo-7.png" alt="Logo">
+      </a>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <!-- navbar links group -->
+        <div class="navbar-links-group text-uppercase me-1 me-md-2 d-none d-sm-block">
+          <a href="#" class="text-white">Login</a>
+          <a href="#" class="text-white">Register</a>
+          <a href="#" class="text-white">Help</a>
+        </div>
+
+        <!-- search wrapper desktop -->
+        <div class="search-warpper d-none d-lg-block bg-white border rounded ms-3">
+          <div class="input-group">
+            <input type="search" class="form-control shadow-none p-2 ps-3" placeholder="Search">
+            <span class="input-group-text px-3">
+              <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#6D7073"/>
+                </svg>
+            </span>
+          </div>
+        </div>
+          
+        <!-- search-toggler mobile -->
+        <button class="search-toggler bg-transparent border-0 px-0 ms-2 ms-lg-4 d-block d-lg-none"  type="button" data-bs-toggle="collapse" data-bs-target="#navigation-7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+            </svg>
+        </button>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler p-0 border-0 shadow-none ms-1 me-n3 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white py-0 d-block">
+    <div class="container d-block">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="collapse navbar-collapse" id="navigation-7">
+            <!-- navbar links group -->
+            <div class="navbar-links-group text-uppercase my-4 me-1 me-md-2 d-block d-sm-none">
+              <a href="#" class="text-white">Login</a>
+              <a href="#" class="text-white">Register</a>
+              <a href="#" class="text-white">Help</a>
+            </div>
+
+            <!-- search mobile -->
+            <div class="search-warpper search-warpper-toggleble mt-4 mt-lg-0 d-block d-lg-none border">
+              <div class="input-group">
+                <span class="input-group-text ps-4">
+                  <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                    </svg>
+                </span>
+                <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+              </div>
+            </div>
+            <!-- navigation menu -->
+            <ul class="navbar-nav mx-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-8 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-xl navbar-dark py-0">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="/">
+            <img src="images/navigation/logo-8.png" alt="Logo">
+          </a>
+
+          <!-- social links -->
+          <ul class="list-unstyled mb-0 d-none d-md-block d-xl-none ms-auto me-3">
+            <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+
+          <!-- navbar toggler -->
+          <button class="navbar-toggler p-0 border-0 shadow-none me-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+          </button>
+
+          <!-- navigation menu -->
+          <div class="collapse navbar-collapse" id="navigation-8">
+            <ul class="navbar-nav mx-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- social links -->
+            <ul class="list-unstyled mb-4 mb-md-0 d-block d-md-none d-xl-block ms-n1 me-md-n2 position-relative" style="z-index:5">
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-9 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-xl navbar-light py-0">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="/">
+            <img src="images/navigation/logo-9.png" alt="Logo">
+          </a>
+
+          <!-- social links -->
+          <ul class="list-unstyled mb-0 d-none d-md-block d-xl-none ms-auto me-3">
+            <li class="list-inline-item"><a href="#" class="text-black d-block p-2"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-black d-block p-2"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-black d-block p-2"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-black d-block p-2"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+
+          <!-- navbar toggler -->
+          <button class="navbar-toggler p-0 border-0 shadow-none me-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-9" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+          </button>
+
+          <!-- navigation menu -->
+          <div class="collapse navbar-collapse" id="navigation-9">
+            <ul class="navbar-nav mx-auto my-3 my-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Budgeting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Credit Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                  <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Banking</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- social links -->
+            <ul class="list-unstyled mb-4 mb-md-0 d-block d-md-none d-xl-block ms-n1 me-md-n2 position-relative" style="z-index:5">
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white d-block p-2"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br>
+
+<header class="navigation navigation-10">
+  <div class="container">
+    <div class="px-3 px-md-4 px-lg-6 bg-white">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light py-0">
+            <!-- brand logo -->
+            <a class="navbar-brand order-2 order-lg-1" href="/">
+              <img src="images/navigation/logo-10.png" alt="Logo">
+            </a>
+
+            <!-- navbar toggler -->
+            <button class="navbar-toggler p-0 border-0 shadow-none order-0 order-lg-2 ms-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-10" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="nav-toggler-icon" viewBox="0 0 100 100"><path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" /><path class="line middle" d="m 70,50 h -40" /><path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" /></svg>
+            </button>
+              
+            <!-- search-toggler mobile -->
+            <button class="search-toggler no-divider bg-transparent border-0 px-0 d-block d-lg-none order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-10" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="#000"/>
+                </svg>
+            </button>
+
+            <!-- navigation menu -->
+            <div class="collapse navbar-collapse order-4 order-lg-3" id="navigation-10">
+
+              <div class="search-warpper search-warpper-toggleble mt-4 d-block d-lg-none">
+                <div class="input-group">
+                  <span class="input-group-text ps-4">
+                    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="white"/>
+                      </svg>
+                  </span>
+                  <input type="search" class="form-control shadow-none text-white p-2 ms-0" title="Type & search here">
+                </div>
+              </div>
+              <ul class="navbar-nav ms-auto my-3 my-lg-0 text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Budgeting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Credit Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Investing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Budgeting</a></li>
+                    <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                    <li><a class="dropdown-item" href="#">Banking</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <!-- search-toggler desktop -->
+              <button class="search-toggler no-divider ms-0 bg-transparent border-0 px-0 d-none d-lg-block" data-toggle="search">
+                <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.7494 20.5399L16.3804 15.1709C17.7149 13.566 18.519 11.5052 18.519 9.25977C18.519 4.15391 14.3652 0 9.25953 0C4.15379 0 0 4.15391 0 9.25977C0 14.3653 4.15379 18.5188 9.25953 18.5188C11.5049 18.5188 13.5658 17.7149 15.1707 16.3804L20.5399 21.7494C20.7068 21.9165 20.9258 22 21.1446 22C21.3635 22 21.5825 21.9165 21.7495 21.7494C22.0836 21.4154 22.0836 20.8739 21.7494 20.5399ZM1.71069 9.25977C1.71069 5.09719 5.09707 1.7107 9.25953 1.7107C13.4219 1.7107 16.8081 5.09719 16.8081 9.25977C16.8081 13.422 13.4219 16.8082 9.25953 16.8082C5.09707 16.8082 1.71069 13.422 1.71069 9.25977Z" fill="black"/>
+                  </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="border-top"></div>
+      </div>
+    </div>
+    <div class="row gy-6 mt-5 justify-content-between">
+      <div class="col-xl-4 col-lg-5">
+        <a href="#" class="d-inline-block mb-4">
+          <img src="images/navigation/logo-1.png" alt="logo">
+        </a>
+        <p class="mb-0 mb-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+        <div class="d-none d-lg-block">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-telegram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+          </ul>
+
+          <p>© 2021 Namecom. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7">
+        <div class="row gy-6">
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">About</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Company</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Leadership</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Press</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">Help</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Help center</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Support team</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Community</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Security FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h5 class="line-title text-uppercase h6 mb-5">Legal</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mt-3"><a href="#" class="text-dark">Terms of use</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Privacy policy</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">California privacy policy</a></li>
+              <li class="mt-3"><a href="#" class="text-dark">Updated</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-block d-lg-none mt-5 mt-lg-0">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-telegram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-instagram-square"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark h3"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+          </ul>
+
+          <p>© 2021 Namecom. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<!-- <script src="plugins/jquery/jquery.slim.min.js"></script> -->
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

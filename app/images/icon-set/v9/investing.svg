@@ -1,0 +1,29 @@
+<svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.4" width="78" height="78" rx="8" fill="url(#paint0_linear_1536_167)"/>
+<g clip-path="url(#clip0_1536_167)">
+<path d="M28.4615 37.7693H21.6923C20.7582 37.7693 20 38.3896 20 39.1539V51.6154C20 52.3797 20.7582 53.0001 21.6923 53.0001H28.4615C29.3957 53.0001 30.1538 52.3797 30.1538 51.6154V39.1539C30.1538 38.3896 29.3957 37.7693 28.4615 37.7693Z" fill="url(#paint1_linear_1536_167)"/>
+<path d="M41.9996 32.2307H35.2304C34.2962 32.2307 33.5381 32.851 33.5381 33.6153V51.6153C33.5381 52.3796 34.2962 52.9999 35.2304 52.9999H41.9996C42.9338 52.9999 43.6919 52.3796 43.6919 51.6153V33.6153C43.6919 32.851 42.9338 32.2307 41.9996 32.2307Z" fill="url(#paint2_linear_1536_167)"/>
+<path d="M55.5387 17H48.7695C47.8353 17 47.0771 17.6203 47.0771 18.3846V51.6154C47.0771 52.3797 47.8353 53 48.7695 53H55.5387C56.4728 53 57.231 52.3797 57.231 51.6154V18.3846C57.231 17.6203 56.4728 17 55.5387 17Z" fill="url(#paint3_linear_1536_167)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1536_167" x1="34.4118" y1="0" x2="34.4118" y2="78" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0047FF" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#0047FF" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1536_167" x1="25.0769" y1="37.7693" x2="25.0769" y2="53.0001" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0047FF"/>
+<stop offset="1" stop-color="#0085FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1536_167" x1="38.615" y1="32.2307" x2="38.615" y2="52.9999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0047FF"/>
+<stop offset="1" stop-color="#0085FF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1536_167" x1="52.1541" y1="17" x2="52.1541" y2="53" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0047FF"/>
+<stop offset="1" stop-color="#0085FF"/>
+</linearGradient>
+<clipPath id="clip0_1536_167">
+<rect width="37.2308" height="44" fill="white" transform="translate(20 17)"/>
+</clipPath>
+</defs>
+</svg>

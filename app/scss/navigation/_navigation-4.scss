@@ -1,0 +1,108 @@
+.navigation-4 {
+  .navbar-dark .bg-dark {
+    background-color: #4E4E4E !important;
+  }
+  .nav-item {
+    .nav-link {
+      padding: 0.75rem 1.5rem;
+      @include desktop-xl {
+        padding: 0.75rem 1.25rem;
+      }
+      @include desktop-lg {
+        padding: 0.75rem .75rem;
+      }
+      color: $white;
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      color: $white;
+      background-color: $color-primary;
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      padding: .5rem 1.25rem;
+      &:active, &.active, &:focus {
+        background-color: $color-primary;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      box-shadow: 0px 14px 21px #E4EFF9;
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+    @media (min-width:991px) {
+      &:hover .dropdown-menu {
+        margin-top: 0px;
+      }
+    }
+  }
+  @include desktop {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 80px);
+      width: 1920px;
+      background-color: $color-primary;
+      bottom: 0;
+      left: -50%;
+      z-index: 1;
+    }
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          background-color: transparent;
+          opacity: .8;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  // btn style
+  .btn-variable {
+    background-color: $color-serenity;
+    border-color: $color-serenity;
+    color: $white;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      background: darken($color-serenity, 5) !important;
+      border-color: darken($color-serenity, 5) !important;
+    }
+    @include mobile {
+      padding: 0.6rem 1rem;
+    }
+  }
+
+  // search-warpper
+  @media (min-width:991px) {
+    .search-warpper {
+      background: $color-primary;
+      top: 50px;
+      border-bottom-left-radius: 0;	
+      border-bottom-right-radius: 0;
+    }
+  }
+}

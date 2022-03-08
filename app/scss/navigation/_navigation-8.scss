@@ -1,0 +1,98 @@
+.navigation-8 {
+  .nav-item {
+    .nav-link {
+      padding: 1.68rem 1.25rem;
+      @include desktop-lg {
+        padding: .67rem .75rem;
+      }
+      color: $white;
+    }
+    .nav-link.active,
+    &:hover .nav-link {
+      opacity: .85;
+    }
+  }
+  .dropdown {
+    .dropdown-item {
+      &:active, &.active, &:focus {
+        background-color: $color-primary;
+      } 
+    }
+    .dropdown-menu {
+      border: 0;
+      box-shadow: 0px 14px 21px #E4EFF9;
+      @include desktop-lg {
+        box-shadow: none;
+      }
+    }
+  }
+  @include desktop-lg {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: calc(100% - 60px);
+      width: 1920px;
+      background-color: $color-primary;
+      bottom: 0;
+      left: -50%;
+      z-index: 1;
+    }
+    .search-warpper,
+    .navbar-nav {
+      position: relative;
+      z-index: 2;
+    }
+    .nav-item {
+      .nav-link.active,
+      .nav-link {
+        color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        &.active,
+        &:focus,
+        &:hover {
+          color: $white;
+          opacity: .9;
+        }
+      }
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($white, .5);
+        }
+      }
+    }
+  }
+
+  .nav-toggler-icon .line {
+    stroke: $white;
+  }
+
+  // search-warpper
+  @media (min-width:1200px) {
+    .search-warpper {
+      position: absolute;
+      display: block !important;
+      background: $color-primary;
+      top: 61px;
+      left: 0;
+      z-index: 44;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: 0.3s;
+      &.show {
+        transform: scaleY(1);
+      }
+      .input-group-text, .form-control {
+        background-color: transparent !important;
+      }
+      .form-control {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+      }
+    }
+  }
+}
